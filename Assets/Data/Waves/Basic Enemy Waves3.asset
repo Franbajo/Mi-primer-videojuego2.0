@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd73791be7df87a488b41c86f81c18ad, type: 3}
+  m_Name: Basic Enemy Waves3
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemyPrefab: {fileID: 114703318537858974, guid: 3c20333983b0623419723dece6130aba,
+      type: 2}
+    spawnReferencePosition: {x: -3, y: 5.3, z: 0}
+    useSpecificXPosition: 1
+    config: {fileID: 11400000, guid: ee2f5eed6987df64d8920a8c63b9b7e0, type: 2}
+  cadence: 1

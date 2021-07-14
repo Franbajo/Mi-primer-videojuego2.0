@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6623eddda5368e4438d454409eb8d943
+timeCreated: 1574082129
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - chifarrazo: {fileID: 1199546224505476, guid: 662ff82fc5c8fed4d8861fcea98acd41,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

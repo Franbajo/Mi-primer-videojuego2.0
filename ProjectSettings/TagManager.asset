@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Floor
+  - platform
+  - player1
+  - Wall
+  - Bullet
+  - playertag
+  - escalera
+  - boom
+  - EnemyBullet
+  - Enemy
+  - endStage
+  - protaicons
+  - camaraCentro
+  - Boss
+  - paraBoss
+  - EnemyDie
+  - FollowBoss
+  - PowerUps
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player1
+  - EnemyBullet
+  - Coin
+  - Bullet
+  - Temblor_Suelo
+  - Wall_Floor
+  - Enemy
+  - Camera_Limit
+  - Bullet_Limit
+  - endStage2
+  - camaraCentro
+  - paraBoss
+  - LimiteShootEmUp_Player
+  - DestroyAsteroid
+  - UntouchableAsteroid
+  - PowerUps
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 999214245
+    locked: 0
+  - name: Background01
+    uniqueID: 2735412115
+    locked: 0
+  - name: Details
+    uniqueID: 410315159
+    locked: 0
+  - name: plataforms02
+    uniqueID: 1142798217
+    locked: 0
+  - name: platforms
+    uniqueID: 3437609519
+    locked: 0
+  - name: enemies
+    uniqueID: 920151981
+    locked: 0
+  - name: enemy_bullet
+    uniqueID: 3567117541
+    locked: 0
+  - name: player
+    uniqueID: 1857289531
+    locked: 0
+  - name: foreground04
+    uniqueID: 564802013
+    locked: 0
