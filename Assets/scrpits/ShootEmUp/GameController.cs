@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 	private int playerscore;
 	[SerializeField] private PlayerControl player;
 
+
 	[HideInInspector]
 	public PlayerControl Player{
 		get { 
@@ -17,7 +18,6 @@ public class GameController : MonoBehaviour {
 
 	private void Awake(){
 		Instance = this;
-
 	}
 
 	public void OnDie(GameObject deadObject, int score=0){
@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void OnPickupPickedUp(PickupController pickup){
-		player.UnlockSpecial (pickup.config);
+		player.UnlockSpecial (pickup.config.type);
 	}
 
 

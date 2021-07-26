@@ -22,7 +22,6 @@ TagManager:
   - EnemyDie
   - FollowBoss
   - PowerUps
-  - PlayerShield
   layers:
   - Default
   - TransparentFX
@@ -48,7 +47,7 @@ TagManager:
   - DestroyAsteroid
   - UntouchableAsteroid
   - PowerUps
-  - PlayerShield
+  - 
   - 
   - 
   - 

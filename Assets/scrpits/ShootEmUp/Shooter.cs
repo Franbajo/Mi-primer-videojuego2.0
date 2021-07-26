@@ -16,9 +16,14 @@ public class Shooter : MonoBehaviour {
 	public bool IsEnabled=true;
 
 	private void Start(){
+		/*.....ESTO ES PARA EL DISPARO AUTOMÁTICO......*/
 		if (config == null) {
 			return;
 		}
+		if (config.autoShooting) {
+			StartCoroutine (AutoShoot ());
+		}
+		/*..............................................*/
 	}
 
 
@@ -34,6 +39,16 @@ public class Shooter : MonoBehaviour {
 		IsEnabled = shouldEnable;
 	}
 	/*.................................................................*/
+
+	/*.....DISPARO AUTOMÁTICO......*/
+	private IEnumerator AutoShoot(){
+		while(true){
+			DoShoot ();
+			yield return new WaitForSeconds (config.shootCadence);
+		}
+
+	}
+	/*.............................*/
 
 
 }

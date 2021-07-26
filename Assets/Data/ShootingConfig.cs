@@ -13,6 +13,6 @@ public class ShootingConfig : ScriptableObject {
 							//le decimos que antes de hacer la pausa ejecute tantos ataques.
 	public float shootCadence;
 	public int damage;
-	//public bool autoShooting=false;
+	public bool autoShooting=false;
 
 }

@@ -7,9 +7,7 @@ public class AutoLookAt : MonoBehaviour {
 	private Transform target;
 
 	public void Start(){
-
-			target = GameController.Instance.Player.transform;
-		
+		target = GameController.Instance.Player.transform;
 	}
 
 

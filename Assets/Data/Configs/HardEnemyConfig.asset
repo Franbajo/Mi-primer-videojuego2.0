@@ -16,4 +16,4 @@ MonoBehaviour:
   isShooter: 1
   score: 100
   shootingConfig: {fileID: 11400000, guid: 051a67bfce07158469a2ca793c7e1630, type: 2}
-  pickupChance: 1
+  pickupChance: 0.48
