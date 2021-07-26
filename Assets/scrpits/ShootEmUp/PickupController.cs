@@ -8,6 +8,5 @@ public class PickupController : MonoBehaviour {
 
 	public void OnPickedUp(){
 		GameController.Instance.OnPickupPickedUp (this);
-
 	}
 }

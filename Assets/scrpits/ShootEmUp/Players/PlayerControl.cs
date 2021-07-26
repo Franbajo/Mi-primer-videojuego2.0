@@ -5,12 +5,18 @@ using UnityEngine;
 
 	
 public class PlayerControl : MonoBehaviour {
+	
 	public float speed;//Para el movimiento del personaje
 	public Mover moverComponente;//Para el movimiento del personaje
 	[SerializeField] private List <Shooter> shooter;
 	[SerializeField] private SpecialController specialController;
-
+	//[SerializeField] private Collider2D playerCollider;
+	[SerializeField] private OnEnemyTriggerEnterDo triggerer;
+	[SerializeField] private GameObject Escudo;
+	[SerializeField] private GameObject FireBall;
+	//[SerializeField] private List <GameObject> Laser;
 	private void Start(){
+
 		/*....Esto es para mover el personaje....*/
 		moverComponente.speed = speed;
 		/*.......................................*/
@@ -37,17 +43,45 @@ public class PlayerControl : MonoBehaviour {
 	}
 	/*.................................................*/
 
-	public void UnlockSpecial(PickupType pickupType){
-		Debug.LogFormat ("Especial desbloqueado tipo {0}", pickupType);
-		specialController.UnlockSpecial (pickupType);
+	/*.........MÉTODO PARA LOS PICUPS O POWERUPS............*/
+	public void UnlockSpecial(PickupConfig pickupConfig){
+		Debug.LogFormat ("Especial desbloqueado tipo {0}", pickupConfig.type);
+		specialController.UnlockSpecial (pickupConfig.type);
+		if (pickupConfig.type == PickupType.Shield) {
+			EnableCollider(false);
+		} 
+		if (pickupConfig.type == PickupType.BigLaser) {
+			EnabledBigLaser (false);
+		}
+
 	}
+	/*......................................................*/
+
+	/*.... MÉTODO PARA ACTIVAR Y DESACTIVAR EL COLLIDER DEL PLAYER CUANDO LLEVAMOS EL ESCUDO.......*/
+	public void EnableCollider(bool shouldEnable){
+		triggerer.IsEnabled = shouldEnable;
+	}
+	/*.............................................................................................*/
+
 
 	public void OnPlayerDie(){
-		GameController.Instance.OnPlayerDie ();
+			GameController.Instance.OnPlayerDie ();
+
 	}
-		
+
+	/*.......MÉTODO PARA QUE EN CASO DE QUE NO TENGAMOS ESCUDO, SE VUELVA A ACTIVAR EL */
 	void Update () {
-
+		if (!Escudo.activeSelf) {
+			EnableCollider (true);
+		}
 	}
 
+	/*..........ESTO ES UN CHANWEIS PARA CAMBIAR DE UN ARMA A OTRA..........*/
+	public void EnabledBigLaser(bool enabled){
+		foreach(var shoot in shooter){
+			shoot.IsEnabled = enabled;
+		}
+		FireBall.SetActive(enabled);
+	}
+	/*......................................................................*/
 }

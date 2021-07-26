@@ -155,6 +155,7 @@
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\Explosion\Instantiatorexplosion.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\Explosion\Instantiatorexplosion2.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\Explosion\MultipleInstantiator.cs" />
+     <Compile Include="Assets\scrpits\ShootEmUp\Enemies\Explosion\MultipleInstantiatorPickups.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\HealthController.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\OnEnemyTriggerEnterDo.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Enemies\PrincipalHealthController.cs" />
@@ -168,8 +169,12 @@
      <Compile Include="Assets\scrpits\ShootEmUp\Players\Limits.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Players\OnCollisionDo.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Players\PlayerControl.cs" />
+     <Compile Include="Assets\scrpits\ShootEmUp\ShieldHealthController.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Shooter.cs" />
+     <Compile Include="Assets\scrpits\ShootEmUp\ShooterBigLaser.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\SpecialController.cs" />
+     <Compile Include="Assets\scrpits\ShootEmUp\WeaponController.cs" />
+     <Compile Include="Assets\scrpits\ShootEmUp\WeaponLevel.cs" />
      <Compile Include="Assets\scrpits\Tinter.cs" />
      <Compile Include="Assets\scrpits\UI\CoinManager.cs" />
      <Compile Include="Assets\scrpits\UI\PickedCoin.cs" />

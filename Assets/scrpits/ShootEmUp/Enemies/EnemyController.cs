@@ -26,14 +26,19 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	public void OnDie(){
-
 		if(config!=null && multipleInstantiator!=null && config.ShouldThrowPickup()){
-			multipleInstantiator.InstantiateInSequence ();
+			if (multipleInstantiator.InstantiatorCount > 1) {
+				for(int i=0; i<multipleInstantiator.InstantiatorCount; i++){
+					if(Dice.IsChanceSuccess(config.pickupChance)){
+						multipleInstantiator.InstantiateByIndex (i);
+					}
+				}
+			} else {
+				multipleInstantiator.InstantiateInSequence ();
+			}
 		}
-
 		Debug.Log ("Hey! estoy muerto!");
 		GameController.Instance.OnDie (this.gameObject, config.score);
-
 	}
 
 	private IEnumerator ShootForever(Shooter shooter){

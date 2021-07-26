@@ -11,6 +11,10 @@ public class OnEnemyTriggerEnterDo : OnCollisionDo {
 	public GameObject collisionee;
 
 	protected override void OnTriggerEnter2D (Collider2D collision){
+		if(!IsEnabled){
+			return;
+		}
+
 		alwaysActions.Invoke ();
 		foreach (var ignoreTag in tagsToIgnore) {
 			if (collision.tag == ignoreTag) {
@@ -26,4 +30,6 @@ public class OnEnemyTriggerEnterDo : OnCollisionDo {
 		}
 	}
 
+	public void Update(){
+	}
 }
