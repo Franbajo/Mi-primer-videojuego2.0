@@ -170,6 +170,10 @@
      <Compile Include="Assets\scrpits\ShootEmUp\Players\PlayerControl.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\Shooter.cs" />
      <Compile Include="Assets\scrpits\ShootEmUp\SpecialController.cs" />
+<<<<<<< Updated upstream
+=======
+     <Compile Include="Assets\scrpits\ShootEmUp\WeaponController.cs" />
+>>>>>>> Stashed changes
      <Compile Include="Assets\scrpits\Tinter.cs" />
      <Compile Include="Assets\scrpits\UI\CoinManager.cs" />
      <Compile Include="Assets\scrpits\UI\PickedCoin.cs" />

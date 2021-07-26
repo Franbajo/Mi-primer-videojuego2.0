@@ -13,5 +13,11 @@ public enum PickupType{
 public class PickupConfig : ScriptableObject {
 	public PickupType type;
 	public int score;
+<<<<<<< Updated upstream
 	public float durationInSeconds;
+=======
+
+
+	//public float durationInSeconds;
+>>>>>>> Stashed changes
 }

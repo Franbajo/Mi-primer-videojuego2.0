@@ -21,20 +21,12 @@ GameObject:
   - component: {fileID: 4940041479022930}
   - component: {fileID: 114090777949203946}
   - component: {fileID: 114033079579759956}
-<<<<<<< Updated upstream:Assets/prefabs/ShootEmUp/Objects/PickupLaser.prefab
-  - component: {fileID: 114480152976994118}
-  - component: {fileID: 58246512311228236}
-  m_Layer: 23
-  m_Name: PickupLaser
-  m_TagString: PowerUps
-=======
   - component: {fileID: 70529157764289042}
   - component: {fileID: 50233182561254582}
   - component: {fileID: 114848144880354780}
   m_Layer: 11
-  m_Name: BigLaser_Level1
+  m_Name: BigLaser_Level2
   m_TagString: Untagged
->>>>>>> Stashed changes:Assets/prefabs/ShootEmUp/Objects/BigLaser_Level1.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,8 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4885199271744656}
   - component: {fileID: 212226168641930984}
-  - component: {fileID: 95798403282911572}
-  m_Layer: 23
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +55,7 @@ Transform:
   m_GameObject: {fileID: 1980180989217502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 4, z: 2.2147396}
   m_Children: []
   m_Father: {fileID: 4940041479022930}
   m_RootOrder: 0
@@ -83,8 +74,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58246512311228236
-CircleCollider2D:
+--- !u!50 &50233182561254582
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768186811683168}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!70 &70529157764289042
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -95,26 +106,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0062639713}
-  serializedVersion: 2
-  m_Radius: 0.23691225
---- !u!95 &95798403282911572
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1980180989217502}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a3ef4816c32023b41a61c22f43e07ac9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Offset: {x: 0.03090936, y: 0.01378417}
+  m_Size: {x: 0.94331205, y: 2.5376706}
+  m_Direction: 0
 --- !u!114 &114033079579759956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf66d9e76e824ca8737edf436e18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnabled: 1
   alwaysActions:
     m_PersistentCalls:
       m_Calls:
@@ -161,11 +156,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   tagsToIgnore: []
   collisionee: {fileID: 0}
-<<<<<<< Updated upstream:Assets/prefabs/ShootEmUp/Objects/PickupLaser.prefab
---- !u!114 &114480152976994118
-=======
 --- !u!114 &114848144880354780
->>>>>>> Stashed changes:Assets/prefabs/ShootEmUp/Objects/BigLaser_Level1.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,18 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768186811683168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream:Assets/prefabs/ShootEmUp/Objects/PickupLaser.prefab
-  m_Script: {fileID: 11500000, guid: 5490eabc975b98c4592d7e0727f935b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: a05049e365b43b649840bb59d4f7ed17, type: 2}
-=======
   m_Script: {fileID: 11500000, guid: 4ef390de85109ef47a0f8e824488c4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
   direction: {x: 0, y: 10, z: 0}
->>>>>>> Stashed changes:Assets/prefabs/ShootEmUp/Objects/BigLaser_Level1.prefab
 --- !u!212 &212226168641930984
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -216,15 +200,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79dfe82e594789b4db2df2b34c130de6, type: 3}
+  m_SortingLayerID: 1857289531
+  m_SortingLayer: 8
+  m_SortingOrder: -8
+  m_Sprite: {fileID: 21300000, guid: 80c79dc7d985c4244ac2feb5cb4110e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

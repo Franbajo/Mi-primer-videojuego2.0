@@ -113,6 +113,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &47539516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 47539518}
+  - component: {fileID: 47539517}
+  m_Layer: 8
+  m_Name: BigLaser2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &47539517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47539516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111ded1ce99baed449813af543103ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootOrigin: {fileID: 47539518}
+  shootPrefab: {fileID: 1768186811683168, guid: 40bc8f6bc4e9e84418750e4669fe6b83,
+    type: 2}
+  config: {fileID: 11400000, guid: fb225a669435953439b1b6f96aa41339, type: 2}
+  WeaponLevel: 2
+  IsEnabled: 0
+--- !u!4 &47539518
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47539516}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.002000004, y: 0.06400001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 309398395}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181725414
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +269,7 @@ GameObject:
   - component: {fileID: 197491496}
   - component: {fileID: 197491499}
   - component: {fileID: 197491497}
+  - component: {fileID: 197491501}
   - component: {fileID: 197491498}
   - component: {fileID: 197491500}
   - component: {fileID: 197491501}
@@ -265,9 +312,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   moverComponente: {fileID: 197491498}
+<<<<<<< Updated upstream
   shooter:
   - {fileID: 1076914223}
   specialController: {fileID: 309398396}
+=======
+  weapon: {fileID: 197491501}
+>>>>>>> Stashed changes
 --- !u!114 &197491498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,13 +368,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+<<<<<<< Updated upstream
 --- !u!60 &197491501
 PolygonCollider2D:
+=======
+--- !u!114 &197491501
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 197491495}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -344,6 +401,24 @@ PolygonCollider2D:
     - - {x: -0.30151224, y: 1.3292478}
       - {x: -0.5281426, y: 0.965289}
       - {x: -0.08182734, y: 0.9671589}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bfc83b41f2df5428cd7b2f60a357e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooter:
+  - {fileID: 1076914223}
+  specialController: {fileID: 309398396}
+  triggerer: {fileID: 1559456752}
+  Escudo: {fileID: 963004583}
+  FireBall:
+  - {fileID: 574288698}
+  - {fileID: 939204604}
+  shooterBigLaser:
+  - {fileID: 1673187791}
+  - {fileID: 47539517}
+  weaponUp: 0
+>>>>>>> Stashed changes
 --- !u!114 &197491502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +655,13 @@ Transform:
   m_LocalPosition: {x: -0.31, y: 1.242, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< Updated upstream
+=======
+  - {fileID: 574288696}
+  - {fileID: 939204603}
+>>>>>>> Stashed changes
   - {fileID: 1673187788}
+  - {fileID: 47539518}
   - {fileID: 963004584}
   m_Father: {fileID: 197491496}
   m_RootOrder: 2
@@ -724,6 +805,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!1 &574288695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 574288696}
+  - component: {fileID: 574288698}
+  m_Layer: 0
+  m_Name: FireBall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &574288696
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574288695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 309398395}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &574288698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574288695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111ded1ce99baed449813af543103ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootOrigin: {fileID: 574288696}
+  shootPrefab: {fileID: 1827788947873500, guid: b4971fe8798fdda40a471f074ec72854,
+    type: 2}
+  config: {fileID: 11400000, guid: 87787cacd3c8bfe418cd5ffe51c336f3, type: 2}
+  WeaponLevel: 1
+  IsEnabled: 0
+>>>>>>> Stashed changes
 --- !u!1 &591567245
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1122,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &939204602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 939204603}
+  - component: {fileID: 939204604}
+  m_Layer: 0
+  m_Name: FireBall2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &939204603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939204602}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 309398395}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939204604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939204602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111ded1ce99baed449813af543103ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootOrigin: {fileID: 939204603}
+  shootPrefab: {fileID: 1827788947873500, guid: 522f8f4c99a590a45adb471533cf6c45,
+    type: 2}
+  config: {fileID: 11400000, guid: 0dbd125a5610c4b4dba00b4078b85916, type: 2}
+  WeaponLevel: 2
+  IsEnabled: 0
 --- !u!1 &963004583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,10 +1192,108 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+<<<<<<< Updated upstream
   m_Children: []
   m_Father: {fileID: 309398395}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_Children:
+  - {fileID: 1626962843}
+  m_Father: {fileID: 309398395}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963004585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963004583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c3244cbf1149041b803686d61c7e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  onZeroHelathActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 963004583}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 963004585}
+        m_MethodName: resetHelath
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &963004586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963004583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ccf66d9e76e824ca8737edf436e18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsEnabled: 1
+  alwaysActions:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  unignoreActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 963004585}
+        m_MethodName: OnDamage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  tagsToIgnore:
+  - PowerUps
+  collisionee: {fileID: 0}
+--- !u!70 &963004588
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963004583}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.027105764, y: -0.26482436}
+  m_Size: {x: 0.7223985, y: 0.95367545}
+  m_Direction: 0
+>>>>>>> Stashed changes
 --- !u!1 &1076914221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1337,12 @@ MonoBehaviour:
   shootOrigin: {fileID: 1076914222}
   shootPrefab: {fileID: 1858314993094142, guid: 1da1a6bca0e89314a96ee8bbd18d818b,
     type: 2}
+<<<<<<< Updated upstream
   config: {fileID: 0}
+=======
+  config: {fileID: 11400000, guid: d2e9badfba5d5244f8e724a479fc37be, type: 2}
+  WeaponLevel: 0
+>>>>>>> Stashed changes
   IsEnabled: 1
 --- !u!1 &1197749714
 GameObject:
@@ -4640,7 +4919,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1673187788}
-  - component: {fileID: 1673187789}
+  - component: {fileID: 1673187791}
   m_Layer: 8
   m_Name: BigLaser
   m_TagString: Untagged
@@ -4659,9 +4938,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 309398395}
+<<<<<<< Updated upstream
   m_RootOrder: 0
+=======
+  m_RootOrder: 2
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1673187789
+--- !u!114 &1673187791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4673,10 +4956,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootOrigin: {fileID: 1673187788}
+<<<<<<< Updated upstream
   shootPrefab: {fileID: 1465832446841718, guid: cb154908ab464984b9844fbd8f52a42a,
     type: 2}
   config: {fileID: 11400000, guid: 89958f8139611fb408b38819371b8f90, type: 2}
   IsEnabled: 1
+=======
+  shootPrefab: {fileID: 1768186811683168, guid: 512dacdf2405e144f9afc4a927af781c,
+    type: 2}
+  config: {fileID: 11400000, guid: 6785353293d115b438345b32e6adf707, type: 2}
+  WeaponLevel: 1
+  IsEnabled: 0
+>>>>>>> Stashed changes
 --- !u!1 &1713937779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,7 +5010,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wavesConfig:
   - {fileID: 11400000, guid: c89cb5a2c40ff344e9afa117bc807cf6, type: 2}
+<<<<<<< Updated upstream
   - {fileID: 11400000, guid: 2fb53efca3e99d242831bae8831feb6f, type: 2}
+=======
+  - {fileID: 11400000, guid: 4411df1269f46fd42a52c3ea422eb6e7, type: 2}
+  - {fileID: 11400000, guid: c89cb5a2c40ff344e9afa117bc807cf6, type: 2}
+  - {fileID: 11400000, guid: 2cf70d06fb19eb34f91eedf30bfb5efb, type: 2}
+  - {fileID: 11400000, guid: 4411df1269f46fd42a52c3ea422eb6e7, type: 2}
+  - {fileID: 11400000, guid: 2cf70d06fb19eb34f91eedf30bfb5efb, type: 2}
+  - {fileID: 11400000, guid: 4411df1269f46fd42a52c3ea422eb6e7, type: 2}
+>>>>>>> Stashed changes
   initialWaitTime: 2
   cadenceBetweenWaves: 3
 --- !u!1 &1728841418

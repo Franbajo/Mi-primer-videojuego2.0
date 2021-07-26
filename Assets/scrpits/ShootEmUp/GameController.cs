@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
 
 	private int playerscore;
 	[SerializeField] private PlayerControl player;
+	//[SerializeField] private PlayerControl player;
 
 
 	[HideInInspector]
@@ -26,7 +27,11 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void OnPickupPickedUp(PickupController pickup){
+<<<<<<< Updated upstream
 		player.UnlockSpecial (pickup.config.type);
+=======
+		player.weapon.UnlockSpecial (pickup.config);
+>>>>>>> Stashed changes
 	}
 
 

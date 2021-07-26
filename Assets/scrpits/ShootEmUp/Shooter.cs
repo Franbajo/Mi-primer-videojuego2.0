@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+ public enum WeaponType{
+	None,
+	Level1,
+	Level2
+}
+	
 public class Shooter : MonoBehaviour {
 	[SerializeField]private Transform shootOrigin;
 	[SerializeField]private GameObject shootPrefab;
 	[SerializeField]private ShootingConfig config;
+	public WeaponType WeaponLevel;
+	//public int levelUp=1;
 
 	public ShootingConfig ShootingConfig {
 		get{ 
